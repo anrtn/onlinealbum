@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #3B3030;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Flexbox layout for the content area */
+.content {
+    flex: 1;
+    padding-top: 60px; 
+    margin-top: 20px;
+}
+ 
+/* Header Styling */
+header {
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    background-color: #664343;
+    z-index: 1000;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 50px;
+    height: auto; 
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #d3d0cc;
+}
+
+.loc-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem; 
+    margin-top: 60px; 
+    margin-bottom: -75px; 
+    color: #3B3030; 
+}
+
+.loc-heading p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight:normal;
+    font-size: 1.125rem; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+    margin-bottom: -70px;
+    color: #3B3030; 
+}
+
+/* Container for the image gallery */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/* Adjust the width of thumbnail columns */
+.column {
+    width: 16.67%; 
+}
+
+/* New styles for the thumbnail section */
+.thumbnail-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.thumbnail-container .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.thumbnail-container .column {
+    width: auto; 
+    padding: 5px;
+}
+
+.thumbnail-container .demo {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-container .demo:hover {
+    opacity: 1;
+}
+
+/* Make sure the slideshow container stays centered */
+.slideshow-container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Ensure thumbnails fit below the slideshow */
+.thumbnail-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Make thumbnails smaller */
+.demo {
+    width: 100%;
+    opacity: 0.6;
+    height: auto;
+}
+
+/* Adjust the position of prev and next buttons */
+.prev,
+.next {
+    top: 50%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #3b3030;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 10%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*Medium Zoom*/
+.medium-zoom-overlay {
+    z-index: 1001; /* Overlay zoom */
+}
+
+.medium-zoom-image--opened {
+    z-index: 1002;
+}
+
+/* Footer */
+footer {
+    background-color: #664343;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 1200px) {
+    .slideshow-container {
+        width: 80%;
+    }
+}

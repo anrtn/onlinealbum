@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tomohon Gallery</title>
+    <link rel="icon" href="images/logoweb.png">
+    <link rel="stylesheet" href="album.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logoweb.png" alt="Website Logo">
+                </a>
+            </div>
+            
+            <ul>
+                <li class="nav-item">
+                    <a href="index.html#hero">Home</a>
+                </li>
+                 <li><a href="index.html#album-section">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>    
+
+    <div class="loc-heading">
+        <h2>Discover Tomohon</h2>
+        <p>Tomohon, renowned for its cool climate, vibrant flower gardens, traditional markets, unique local cuisine, cultural festivals, and stunning natural landscapes including volcanic mountains.</p>
+      </div>
+
+    <div class="content">
+        <div class="slideshow-container">
+            <div class="container">
+                <!-- Full-width images with number text -->
+                <div class="mySlides" data-caption="Amplitheater in Bukit Doa Mahawu">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="images/tmhampliteater.jpg" alt="Amplitheater">
+                </div>
+    
+                <div class="mySlides" data-caption="Sulfur river flowing in Leilem">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="images/tmhsungai.jpg" alt="Sulfur river">
+                </div>
+    
+                <div class="mySlides" data-caption="A foggy cold tree view" >
+                    <div class="numbertext">3 / 10</div>
+                    <img src="images/tmhbukitdoa.JPG" alt="Foggy tree">
+                </div>
+    
+                <div class="mySlides" data-caption="Garden of flowers" >
+                    <div class="numbertext">4 / 10</div>
+                    <img src="images/tmhkelong.JPG" alt="Garden">
+                </div>
+    
+                <div class="mySlides" data-caption="Sulfur River once again.. A pretty one in Mahwatu">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="images/tmhmahwatu.jpg" alt="Mahwatu">
+                </div>
+    
+                <div class="mySlides" data-caption="Still about sulfurs. A Hot Spring">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="images/tmhlahendong.JPG" alt="Hot spring">
+                </div>
+
+                <div class="mySlides" data-caption="Mount Lokon from its crater">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="images/tmhlokon.jpg" alt="Lokon">
+                </div>
+    
+                <div class="mySlides" data-caption="A bloomed flower">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="images/tmhbunga.jpg" alt="Flower">
+                </div>
+    
+                <div class="mySlides" data-caption="The cafe at Bukit Doa Mahawu">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="images/tmhbukitdoa_2.JPG" alt="Cafe view">
+                </div>
+
+                <div class="mySlides" data-caption="Sunrise from Mount Lokon">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="images/tmhsunrise.jpg" alt="Sunrise">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- TIDAK PAKAI LAGI Description below the caption -->
+                <div class="description-container">
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/tmhampliteater.jpg" onclick="currentSlide(1)" alt="Amplitheater">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhsungai.jpg" onclick="currentSlide(2)" alt="Sulfur river">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhbukitdoa.JPG" onclick="currentSlide(3)" alt="Foggy tree">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhkelong.JPG" onclick="currentSlide(4)" alt="Garden">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhmahwatu.jpg" onclick="currentSlide(5)" alt="Mahwatu">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhlahendong.JPG" onclick="currentSlide(6)" alt="Hot spring">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhlokon.jpg" onclick="currentSlide(7)" alt="Lokon">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhbunga.jpg" onclick="currentSlide(8)" alt="Flower">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhbukitdoa_2.JPG" onclick="currentSlide(9)" alt="Cafe view">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/tmhsunrise.jpg" onclick="currentSlide(10)" alt="Sunrise">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024, Anna Ruitan
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
